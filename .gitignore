@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+pipeline.db
+models/tcn_savedmodel/
+.streamlit/secrets.toml
