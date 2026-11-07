@@ -1,0 +1,8 @@
+streamlit>=1.40
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+joblib
+tensorflow>=2.16
