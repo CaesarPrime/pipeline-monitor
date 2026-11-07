@@ -1,0 +1,15 @@
+{
+  "name": "Pipeline Integrity Monitor",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "hostRequirements": { "cpus": 2 },
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt && python train.py",
+  "postAttachCommand": "streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": { "label": "Dashboard", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md"] },
+    "vscode": { "extensions": ["ms-python.python"] }
+  }
+}
