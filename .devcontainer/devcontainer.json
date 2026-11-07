@@ -6,7 +6,7 @@
   "postAttachCommand": "streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false",
   "forwardPorts": [8501],
   "portsAttributes": {
-    "8501": { "label": "Dashboard", "onAutoForward": "openPreview" }
+    "8501": { "label": "Dashboard", "onAutoForward": "openBrowser" }
   },
   "customizations": {
     "codespaces": { "openFiles": ["README.md"] },
